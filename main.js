@@ -62,7 +62,13 @@ const compareUserMove = () => {
 };
 
 const reset = () => {
-    btn.classList.remove
+    btn.classList.remove('hidden')
+    resetBtn.classList.add('hidden')
+    playerPoints = 0;
+    player.innerHTML = "Jugadora: " + playerPoints;
+    computerPoints = 0;
+    computer.innerHTML = "Computadora: " + computerPoints;
+
 };
 
 const handleClick = (event) => {

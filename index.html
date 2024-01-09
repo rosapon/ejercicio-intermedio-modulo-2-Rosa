@@ -7,26 +7,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-        <h1>Juego Priedra, Papel y Tijera</h1>
-        <h2>Introduce aquí tu jugada:</h2>
-        <select class="js-select">
+    <main class="main">
+        <h1 class="title">Juego Priedra, Papel y Tijera</h1>
+        <h2 class="subtitle">Introduce aquí tu jugada:</h2>
+        <div class="game">
+        <select class="select js-select">
             <option value="piedra">Piedra</option>
             <option value="papel">Papel</option>
             <option value="tijera">Tijera</option>
         </select>
-        <input type="submit" value="Jugar" class="js-btn">
-        <h3 class="js-result">¡Vamos a jugar!</h3>
-        <p class="js-player">Jugadora: 0</p>
-        <p class="js-computer">Computadora: 0</p>
-        <input type="text" class="js-reset hidden" value="Reiniciar juego">
-        
-
-
-
-
-
-
+        <input type="submit" value="Jugar" class="btn js-btn">
+        <h3 class="result js-result">¡Vamos a jugar!</h3>
+        <p class="points js-player">Jugadora: 0</p>
+        <p class="points js-computer">Computadora: 0</p>
+    </div>
+    <input type="submit" class="reset js-reset hidden" value="Reiniciar juego">
     </main>
     <script text="javascript" src="./main.js"></script>
 </body>
