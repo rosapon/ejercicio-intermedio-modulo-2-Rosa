@@ -7,6 +7,7 @@ let player = document.querySelector('.js-player');
 let computer = document.querySelector('.js-computer');
 let playerPoints = 0;
 let computerPoints = 0;
+const resetBtn = document.querySelector('.js-reset');
 
 
 
@@ -45,13 +46,23 @@ const compareUserMove = () => {
         resultMsg.innerHTML = "¡Has ganado!"
         playerPoints += 1;
         player.innerHTML = "Jugadora: " + playerPoints;
+
         
     } else {
         resultMsg.innerHTML = "Has perdido"
         computerPoints += 1;
         computer.innerHTML = "Computadora: " + computerPoints;
+
     };
-     
+
+    if (playerPoints === 10 || computerPoints === 10) {
+        resetBtn.classList.remove('hidden');
+        btn.classList.add('hidden');
+    };  
+};
+
+const reset = () => {
+    btn.classList.remove
 };
 
 const handleClick = (event) => {
@@ -61,6 +72,8 @@ const handleClick = (event) => {
 };
 
 btn.addEventListener('click', handleClick); 
+
+resetBtn.addEventListener('click', reset);
 
 
 
